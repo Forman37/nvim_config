@@ -27,6 +27,10 @@ return {
                 git = {
                     ignore = false,
                 },
+                sort = {
+                    sorter = "extension",
+                    folders_first = true,
+                },
             })
 
             -- global toggle key

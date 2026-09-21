@@ -22,7 +22,9 @@ return {
                 "pyright",
                 "ruff",
                 "rust_analyzer",
-                "clangd", },
+                "clangd",
+                "gopls",
+            },
             automatic_enable = {
                 exclude = { "dartls" }
             },
@@ -49,6 +51,7 @@ return {
             })
             vim.lsp.config("rust_analyzer", { capabilities = capabilities })
             vim.lsp.config("clangd", { capabilities = capabilities })
+            vim.lsp.config("gopls", { capabilities = capabilities })
             vim.lsp.config("lua_ls", {
                 capabilities = capabilities,
                 settings = {
