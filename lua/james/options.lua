@@ -45,6 +45,9 @@ vim.api.nvim_create_autocmd("FileType", {
     end,
 })
 
+-- Status line
+vim.opt.statusline = "%F"
+
 -- Folding
 vim.opt.foldmethod = "manual" -- ufo overrides this, just set to manual
 vim.opt.foldlevel = 99
