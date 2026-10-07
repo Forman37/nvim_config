@@ -89,7 +89,7 @@ return {
                 },
                 mapping = cmp.mapping.preset.insert({
                     ["<C-Space>"] = cmp.mapping.complete(),
-                    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+                    ["<C-y>"] = cmp.mapping.confirm({ select = true }),
 
                     ["jk"] = cmp.mapping(function(fallback) -- NEW: add this block
                         if cmp.visible() then

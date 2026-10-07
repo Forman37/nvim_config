@@ -1,12 +1,16 @@
+-- Docs: https://github.com/navarasu/onedark.nvim
 return {
     -- Theme
     {
-        "Mofiqul/dracula.nvim",
+        "navarasu/onedark.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd([[colorscheme dracula]])
+            require("onedark").setup({
+                style = "deep",
+            })
+
+            require("onedark").load()
         end,
     },
-
 }
